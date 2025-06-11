@@ -91,4 +91,3 @@ This repository includes:
 - Feature extraction using ResNet50
 - Training scripts for both binary and multiclass MIL models
 - Attention heatmap visualisation and evaluation workflows
->>>>>>> 02a9fb1f5f4cf9519f56b5d649f6b1d0b1d9a8a9

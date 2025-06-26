@@ -20,23 +20,22 @@
 
 ```
 oralpatho/
-├── data/                # Placeholder/instructions for WSI datasets
-├── docs/                # Documentation and figure panels
-├── examples/            # CLI and inference examples
-├── interface/           # Jupyter-based interactive interface (WSI → Prediction → Heatmap)
-├── results/             # Model outputs and evaluation results
-├── scripts/             # Shell or CLI pipeline runners
-├── src/                 # Core pipeline code
-│   ├── preprocessing/   # Patch extraction, color normalization
-│   ├── training/        # Training scripts for MIL models
-│   ├── models/          # MIL model definitions
-│   ├── datasets/        # Custom dataset loaders
-│   ├── utils/           # Helper functions and wrappers
-│   └── visualization/   # Attention map plotting notebooks
-├── testing/             # Model testing and cross-validation scripts
-├── requirements.txt     # Python dependencies
-├── LICENSE
-└── README.md
+
+| Folder/File             | Description |
+|------------------------|-------------|
+| `src/`                 | Core pipeline modules for preprocessing, model training, and utilities |
+| ├── `preprocessing/`   | Jupyter notebooks for patch extraction, feature generation, normalization |
+| ├── `training/`        | Training scripts for binary and multiclass MIL models |
+| ├── `models/`          | MIL model architecture definitions |
+| ├── `datasets/`        | Custom dataset loaders for WSI classification |
+| ├── `utils/`           | Data collation and helper functions |
+| └── `visualization/`   | Notebook for generating attention heatmaps |
+| `interface/`           | Scripts for interactive WSI-based inference and visualization |
+| `testing/`             | Scripts for evaluating binary and multiclass models |
+| `docs/`                | Figures and documentation resources |
+| `requirements.txt`     | Python package dependencies |
+| `README.md`            | Project overview and usage guide |
+
 ```
 
 ---
@@ -93,7 +92,7 @@ Make sure your WSIs and extracted features are accessible at configured paths. T
 
 If you use OralPatho in your research, please cite:
 
-> **Chaudhary N, et al.** *OralPatho: Pathologist-Free Dual-Stage AI System for Tumor Detection and Grading in Oral Squamous Cell Carcinoma*. medRxiv 2025.  
+> **Chaudhary N, et al.** *OralPatho: Pathologist-Free Dual-Stage AI System for Tumor Detection and sub typing in Oral Squamous Cell Carcinoma*. medRxiv 2025.  
 > [https://doi.org/10.1101/2025.06.05.25329090](https://doi.org/10.1101/2025.06.05.25329090)
 
 ---
